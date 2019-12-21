@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width inital-scale=1.0">
+<title>Tables</title>
+<style>
+table{
+border-collapse:collapse;
+width:100%;
+padding:5 px;
+text-align:left;
+<!--border-spacing:20px;-->
+}
+td,th{
+border:solid 1px black;
+height:100%;
+padding:0.5em;
+}
+tr:nth-child(even){
+background-color:#123456;
+color:white;
+}
+caption{
+font-family:ARİAL;
+BACKGROUND-COLOR:pOWDERBLUE;;
+}
+table#tblAddress th:nth-child(even) {
+  width: 100%;    
+  background-color: gold;
+}
+table#tblAddress td:nth-child(odd){
+background-color:tomato;
+}
+</style>
+</head>
+<body>
+<h1>Personal Lists</h1>
+<table>
+<caption>Personals Information</caption>
+<tr>
+<th>Id</th>
+<th colspan=2>Name</th>
+<th>Surname</th>
+<th>Job</th>
+</tr>
+<tr>
+<td> 01</td>
+<td>Alice</td>
+<td>Diana</td>
+<td>Yellow</td>
+<td>Astronaut</td>
+</tr>
+<tr>
+
+<td>02</td>
+<td>Zayn</td>
+<td></td>
+<td>Purple</td>
+<td>Zookeeper</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Berry</td>
+<td></Td>
+<td>Pink</td>
+<td>Barber</td>
+</tr>
+<tr >
+<td>04</td>
+<td>Yorgi</td>
+<td></td>
+<td>Brown</td>
+<td>Critic</td>
+</tr>
+</table>
+<h1> Addresses belongs to persons</h1>
+
+<table id="tblAddress">
+<tr>
+<th>Name</Th>
+<td>Yorgi</td>
+</tr>
+<th rowspan=5>Address</th>
+<tr><td>Address1</td></tr>
+<tr><td>Address2</td></tr>
+<tr><td>Address3</td></tr>
+<tr><td>Address4</td></tr>
+
+</table>
+
+
+
+
+</body>
+</html>
