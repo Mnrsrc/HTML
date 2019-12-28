@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<title>Classes</title>
+<style>
+.div{
+background-color:gray;
+color:blue;
+font-family:Sans-SERİF Arial;
+font-size:64px;
+margin:10px;
+padding:30px;
+}
+span.note{
+color:red;
+}
+.center{
+text-align:center;
+}
+
+</style>
+</head>
+<body>
+<button onclick="divFunction()">Submit</button>
+<div class="div">
+<p>Profile</p>
+</div>
+<div class="div center">
+<p><span class= "note"></span>Gallery</p>
+</div>
+<div class="div">
+<h1 class="div">Address</h1>
+<p> <span class="note">Contact</span></p>
+</div>
+<script>
+function divFunction(){
+var loop=document.getElementsByClassName("div");
+for(var i=0;i<loop.length; i++){
+loop[i].style.color="red";
+loop[i].style.border="solid 3px black";
+};
+}
+</script>
+
+
+</body>
+</html>
