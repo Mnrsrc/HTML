@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<title>JavaScript</title>
+<style>
+button
+{
+border:none;
+width:70;
+height:50;
+background-color:red;
+}
+</style>
+</head>
+<body>
+<button name="btnDate" id="btnDate" onclick="getDate()">What Time Is It?</button>
+<p id="txtDate"></p>
+<p id="txtGreet"></p>
+
+
+
+<button id="btnTurnOn" onclick=turn(1)> Turn On</button>
+<button id="btnTurnOff" onclick=turn(0) > Turn Off</button>
+<script>
+
+function getDate(){
+var dateNow = document.getElementById("txtDate");
+dateNow.innerHTML=Date();
+}
+
+function greet(){
+document.getElementById("txtGreet").innerHTML="Welcome To Our Page :)";
+document.getElementById("txtGreet").style.color="powderblue";
+document.getElementById("txtGreet").style.backgroundColor="yellow";
+document.getElementById("txtGreet").style.fontSize="25px";
+document.getElementById("txtGreet").style.fontFamily="Calibri Sans Serif";
+}
+
+function turn(sw){
+var img;
+
+if (sw==1){
+img='lambYellow.jpg';
+}
+else {
+img='lambWhite.jpg';
+}
+document.getElementById("lamp").src=img;
+}
+
+
+greet()
+
+
+</script>
+<noscript>Sorry, because of your browser is being old. We can't display JavaScript code :(</noscript>
+<img src="C:\Users\Munire\Documents\cv\Insider\HTML\lambWhite.jpg" id="lamp" >
+</body>
+</html>
