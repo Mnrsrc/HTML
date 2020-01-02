@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<title>File Paths</title>
+<style>
+.image{
+width:500px;
+height:500px;
+padding:3px;
+margin:3px;
+border: solid 2px black;
+}
+</style>
+</head>
+<body>
+<p>With Absolute Image Paths:</p><img src="https://github.com/Mnrsrc/HTML/blob/master/Tulips.jpg?raw=true" alt="tulips" class="image">
+<p>With Relative Image Paths:</p>
+<!-- It does not work!!! -->
+<!-- </p><img src="\HTML\Honeysuckle.jpg" alt="Honeysuckle" id="image"> -->
+<!-- <img src="HTML/Honeysuckle.jpg" alt="Honeysuckle" class="image"> -->
+<img src="..\HTML\Honeysuckle.jpg" alt="Honeysuckle" class="image">
+</body>
+</html>
