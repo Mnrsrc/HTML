@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<title>Layout</title>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="topics" content="Html Layout">
+<meta name="keywords" content="Html, css, layout">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+box-sizing:border-box;
+}
+body{
+font-family:Arial, sans-serif, helvatica;
+}
+header{
+background-color:#ff9900;
+padding:50px;
+text-align:center;
+}
+nav{
+float:left;
+width:30%;
+height:1000px;
+background-color:#ff3399;
+padding:20px;
+}
+article{
+-webkit-flex:3;
+-ms-flex:3;
+flex=3;
+float:left;
+width:70%;
+height:1000px;
+background-color:#66ff33;
+}
+footer{
+background-color:gray;
+}
+ul{
+list-style-type:none;
+padding:0;
+}
+section:after{
+content:"";
+display:table;
+clear:both;
+}
+@media(max-width:600px){
+nav,article{
+width:100%;
+height:auto;
+}
+@media(max-width:600px){
+section{
+-webkit-flex-direction:column;
+flex-direction:column;
+}
+}
+
+}
+</style>
+</head>
+<body>
+<header >Flower Magazine</header>
+<section>
+<nav>Subjects
+<ul>
+<li><a href="#">Sport</a></li>
+<li><a href="#">Health</a></li>
+<li><a href="#">World</a></li>
+</ul>
+</nav>
+<article>Everything about to sport!</article>
+</section>
+<footer>&c; All rigts reserved.</footer>
+<script>
+var choses=document.getElement("li").innerHTML;
+var result=document.getElement("article");
+if (choses=="Sport")
+result=document.innerHTML;
+
+</script>
+</body>
+
+</html>
