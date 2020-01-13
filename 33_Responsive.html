@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<title>Responsive</title>
+<meta charset="utf-8">
+<meta name="subject" content="Responsive design">
+<meta name="keyword" content="responsive,design,html,css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+box-sizing:border-box;
+}
+body{
+background-color:powderBlue;
+font-family:Arial, san-serif, helvatica;
+}
+header{
+padding:5px;
+background-color:#ff5050;
+width:100%;
+height:200px;
+}
+.right{
+background-color:#3399ff;
+float:left;
+width:20%;
+height:500px;
+padding:20px;
+}
+.left{
+background-color:#3399ff;
+float:left;
+width:20%;
+height:500px;
+padding:20px;
+}
+.main{
+background-color:#ccff66;
+padding:10px;
+float:left;
+width:60%;
+height:500px;
+overflow:hidden;
+}
+footer{
+background-color:#ff5050;
+width:100%;
+height:100px;
+}
+
+li {
+border:solid 2px tomato;
+margin-top:15px;
+display.block;
+padding:10px;
+background-color:tomato;
+text-decoration:none;
+
+}
+ul{
+list-style-type:none;
+}
+@media  screen and (max-width:800px){
+.left, .right, .main{
+width:100%;
+}
+}
+
+</style>
+</head>
+<body>
+<header>Journey Guide</header>
+<section>
+<nav class="left">
+<ul style="overflow:auto;">
+Cities
+<li><a href="#">Ankara</a></li>
+<li><a href='#'>Warsaw</a></li>
+<li> <a href="#">Rome</a></li>
+</ul>
+</nav>
+<aside class="main">
+Things to do
+</aside>
+<nav class="right">
+See the places in the own place.
+</nav>
+</section>
+<footer>
+All rights reserved.
+</footer>
+</body>
+</html>
