@@ -11,8 +11,7 @@ body{
 font-family:Arial, sans-serif, helvatica
 }
 input,label{
-padding:5px;
-margin:5px;
+
 text-align:center;
 }
 
@@ -22,17 +21,28 @@ background-color:blue;
 </style>
 </head>
 <body>
-<form action="file:///C:/Users/Munire/Documents/cv/Insider/HTML/33_Responsive.html">
+<form id="frmInfo" action="file:///C:/Users/Munire/Documents/cv/Insider/HTML/33_Responsive.html" target="_self" method="GET">
+<fieldset>
+<legend>Personal Informations</legend>
 <label>Name:</label>
-<input id="txtName" type="text" placeholder="Your name"><br>
+<input id="txtName" name="txtName" type="text" placeholder="Your name" value="Münire"><br>
 <label>Surname:</label>
-<input id="txtSurname" type="text" placeholder="Surname"><br>
+<input id="txtSurname" name="txtSurname" type="text" placeholder="Surname"><br>
 <label>Gender:</label><br>
 <input id="rdnBtnGender" name="rdnBtnGender" type="radio" value="Female" >Female<br>
 <input id="rdnBtnGender2" name="rdnBtnGender2" type="radio" value="Male" >Male<br>
 <input id="rdnBtnGender3" name="rdnBtnGender3" type="radio" value="Other" checked>Other<br>
-<input id="inputSbmt" type="submit" value="Submit" >
+<input id="inputSbmt" type="submit" value="Submit">
+</fieldset>
 </form>
 
+<form id= "frmPassword" action="file:///C:/Users/Munire/Documents/cv/Insider/HTML/33_Responsive.html" target="_blank" method="POST">
+<fieldset>
+<legend>Security</legend>
+<label>Password:</label>
+<input type="text" id="txtPassword" name="txtPassword" value="akdj">
+<input type="submit" id="verifyPassword" value="Verify">
+</fieldset>
+</form>
 </body>
 </html>
