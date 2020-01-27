@@ -3,20 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <title>Form Elements</title>
-
+<style>
+select,textarea{
+padding:10px;
+margin:10px;
+}
+</style>
 </head>
 <body>
-<form>
+
+<form action="#" target="_top" oninput="outputResult.value=parseInt(nbrMainMoney.value)* parseInt(rngVat.value) + parseInt(nbrMainMoney.value)">
 Choose Models:
-<select name="slctcountry">
+<select name="slctcar" size="3" multiple>
+<option value="none" selected>None</option>
 <option value="Volvo">Volvo</option>
-<option name="BMW">BMW</option>
-<option name="Mercedes Benz">Mercedes Benz</option>
-
+<option value="BMW">BMW</option>
+<option value="Mercedes Benz">Mercedes Benz</option>
+<option value="Chevrolet" >Chevrolet</option>
 </select>
-<input type="Submit" value="Submit">
+<br>
+Country:
+<input list="lstCountry" name="dtlstCountry">
+<datalist id="lstCountry">
+<option value="Choose One"></option>
+<option value="America"><option>
+<option value="Zimbabve"><option>
+<option value="Belgium"></option>
 
+</datalist>
+Main Money:<input type="number" name="nbrMainMoney" value="100" id="nbrMainMoney">
++ 
+VAT:<input type="range" name="rngVat" value="100" id="rngVat">100
+=
+
+<output name="outputResult" for="txtMainMoney rngVat">
+</output>
+
+<br> Address:
+<textarea name="txtareaAddress" rows="10" cols="30">
+
+</textarea>
+Other:
+<textarea name="txtareaOther" style="width:60px; height:100px;">
+
+</textarea>
+<input id="sbmtConfirm" type="submit" value="Submit" onclick="Confirm()">
+<input id="btnEdit" type="button" value="Edit" onclick="alert('Lets check them!')">
+<br>
 </form>
+<script>
+function Confirm(){
+alert("Do you confirm?")
+}
+</script>
 
 </body>
 </html>
