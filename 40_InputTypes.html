@@ -8,10 +8,32 @@
 <fieldset>
 <legend>Personal Info</legend>
 Name:
-<input  type="text" name="inputName">
-<input type="password" name="inputPassword">
+<input  type="text" name="inputName"><br>
+Gender:<br><input type="radio" name="rdGender" value="Female">Female<br>
+<input type="radio" name="rdGender" value="Male">Male<BR>
+<input type="radio" name="rdGender" value="Other" checked>Other<br>
+Birth Date:
+<input type="date" name="date" min="2002-01-29"><br>
+<input type="date" name="date" max="1920-01-29">
+Select Years:<input type="checkbox" name="chcboxYear" value="2020">2020
+<input type="checkbox"  name="chcboxYear2" value="2019">2019
+<br>
+Color:
+<input type="color" value="#135790" name="color"><br>
+<br>
+Choose a special time for shipment:
+<input type="datetime-local" name="datetime"><br>
+E-mail:
+<input type="email" name="email"><br>
+Upload your ID Card:
+<input>
+
+Password:
+<input type="password" name="inputPassword"><br>
+<br>
+<input type="button" value="Confirm" name="btnConfirm" onclick="alert('If you confirm, you redirect to another page!')">
 <input type="Submit" value="Submit" name="inputSubmit">
-<input type="Reset">
+<input type="Reset" value="Reset All">
 </fieldset>
 </form>
 </body>
