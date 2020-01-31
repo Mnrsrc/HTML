@@ -18,18 +18,31 @@ Birth Date:
 Select Years:<input type="checkbox" name="chcboxYear" value="2020">2020
 <input type="checkbox"  name="chcboxYear2" value="2019">2019
 <br>
+Maturity:
+0<input type="range" name="maturity" min="0" max="100" step="10">100
 Color:
 <input type="color" value="#135790" name="color"><br>
 <br>
+Age:<input type="number" name="number" max="150" min="18"><br>
 Choose a special time for shipment:
 <input type="datetime-local" name="datetime"><br>
+Choose a special date for shipment:
+<input type="month" name="month"><br>
+Search Models:
+<input type="search" name="search"><br>
+Phone Number:
+<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required">
 E-mail:
 <input type="email" name="email"><br>
-Upload your ID Card:
-<input>
-
+Upload Document:
+<input type="file" name="file"><br>
+Time:
+<input type="time" name="time">
 Password:
 <input type="password" name="inputPassword"><br>
+<br>
+Linkedin Profile:
+<input  type="url" name="url">
 <br>
 <input type="button" value="Confirm" name="btnConfirm" onclick="alert('If you confirm, you redirect to another page!')">
 <input type="Submit" value="Submit" name="inputSubmit">
