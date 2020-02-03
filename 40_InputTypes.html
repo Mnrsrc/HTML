@@ -8,14 +8,17 @@
 <fieldset>
 <legend>Personal Info</legend>
 Name:
-<input  type="text" name="inputName"><br>
+<input  type="text" name="inputName" value="Janet"  readonly><br>
+Lastname:<input type="text" name="surname" size="40" value="Dark" disabled><br>
 Gender:<br><input type="radio" name="rdGender" value="Female">Female<br>
 <input type="radio" name="rdGender" value="Male">Male<BR>
 <input type="radio" name="rdGender" value="Other" checked>Other<br>
 Birth Date:
 <input type="date" name="date" min="2002-01-29"><br>
 <input type="date" name="date" max="1920-01-29">
-Select Years:<input type="checkbox" name="chcboxYear" value="2020">2020
+<br>
+Select Week:<input type="week" name="weekYear"><br>
+Select Years:<input type="checkbox" name="chcboxYear" value="2020" disabled>2020
 <input type="checkbox"  name="chcboxYear2" value="2019">2019
 <br>
 Maturity:
@@ -29,7 +32,7 @@ Choose a special time for shipment:
 Choose a special date for shipment:
 <input type="month" name="month"><br>
 Search Models:
-<input type="search" name="search"><br>
+<input type="search" name="search" maxlength="20"><br>
 Phone Number:
 <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required">
 E-mail:
@@ -37,7 +40,7 @@ E-mail:
 Upload Document:
 <input type="file" name="file"><br>
 Time:
-<input type="time" name="time">
+<input type="time" name="time" >
 Password:
 <input type="password" name="inputPassword"><br>
 <br>
